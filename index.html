@@ -37,7 +37,7 @@
   <link href="./css/style.css" rel="stylesheet">
 </head> <!-- header ends here -->
 
-<body>
+<body data-spy="scroll">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">
       <img src="./img/color-cook-cooking-delicious-259763.jpg" width="40" height="40" class="d-inline-block align-top"
@@ -60,9 +60,9 @@
             Browse Recipes
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="recipes.html">Diet & Healthy</a>
-            <a class="dropdown-item" href="recipes.html">World Cuisine</a>
-            <a class="dropdown-item" href="recipes.html">Meal type</a>
+            <a class="dropdown-item" href="cake.html">Chocolate Cake</a>
+            <a class="dropdown-item" href="lemonade.html">Lemonade</a>
+            <a class="dropdown-item" href="createRecipe.html">Add your recipe</a>
 
           </div>
         </li>
@@ -71,15 +71,14 @@
             <input type="text" class="form-control" placeholder="Find a recipe" aria-label="Find a recipe"
               aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
             </div>
           </div>
         </li>
       </ul>
-      <form name="userform" class="form-inline my-2 my-lg-0" onsubmit="return validateName()">
-        <input class="form-control mr-sm-2" id="username" type="text" placeholder="Enter your Name" aria-label="name"
-          required>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+      <form name="userform" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="username" type="text" placeholder="Enter your Name" aria-label="name">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="validateName()">Submit</button>
       </form>
     </div>
   </nav>
@@ -87,19 +86,11 @@
   <div class="container-fluid">
 
     <h1 class="display-3">YumTum</h1>
-
+    <p id="name"></p>
     <div class="page-image">
       <img src="img\woman-pouring-juice-on-glass-3184192.jpg" class="img-fluid" alt="Responsive image">
     </div>
   </div>
-
-
-
-
-
-
-
-
 
   <footer>
     <!-- footer of page begins here -->

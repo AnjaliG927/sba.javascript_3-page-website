@@ -4,14 +4,35 @@ body {
     background-color:white;
 }
 
+.recipe{
+    background-color:rgb(241, 214, 124);
+}
 
 object {
     height: 100vh;
     width: 100vh;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
  #brand-font{
     font-family: 'Pacifico', cursive;
     color: rgb(146, 1, 1);
+}
+
+div p{
+ margin-top: 50px;   
+margin-right:50px ;
+margin-bottom: 50px;
+}
+div img{
+    height:350px;
+    width:350px;
+    margin-left:20px ;
+    margin-right:20px ;
+    margin-bottom: 20px;
 }
 
 .img-fluid{  
@@ -29,4 +50,37 @@ object {
     font-weight: bolder;
     color: rgb(146, 1, 1);
     text-align: center;
+}
+
+.display-5{
+    font-weight: normal;
+    color: rgb(146, 1, 1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+#name{
+    font-family: 'Pacifico';
+    font-size: x-large;
+    left: 50px;
+    color:orangered;
+}
+
+.info{
+    display: block;
+    margin-left: 20px;
+}
+#ingredients{
+    display: block;
+}
+.table{
+    width: 500px;
+    height: auto;
+   
+    margin-left: 20px;
+    margin-top: 20px;;
+}
+
+.table-bordered{
+    border-color:black;
 }
