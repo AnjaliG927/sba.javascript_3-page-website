@@ -85,18 +85,18 @@
                     <div class="input-group mb-3">
                         <div class="custom-file">
                             <!-- <input type="file" class="custom-file-input" id="inputGroupFile02"> -->
-                            <input type="file" id="fileinput" />
+                            <input type="file" id="myimage" name="inputfile" onchange="loadImageFileAsURL(event)" />
 
                         </div>
                     </div>
                     <p>
-                        <input type="button" id="addRow" value="Add New Row" onclick="addTextBox()" />
+                        <input type="button" id="addRow" value="Add Ingredient" onclick="addTextBox()" />
                     </p>
 
                     <div id="cont"></div> <!-- the container to add the TABLE -->
 
                     <p>
-                        <input type="button" id="bt" value="Submit Data" onclick="submitButton()" />
+                        <input type="button" id="bt" value="Submit" onclick="submitButton()" />
                     </p>
 
                     <p id='output'></p>
@@ -105,13 +105,12 @@
             </div>
         </div>
     </div>
-    <div class="container overflow-auto">
-        <h1 class="display-5">Chocolate Cake</h1>
+    <div class="container overflow-auto" id="hideMyelement">
+        <h1 class="display-5" id="displayname">Chocolate Cake</h1>
 
         <div class="info">
-            <div><img src=./img/photo-of-chocolate-cake-2144200.jpg alt="chocolate cake" style="float: left;">
-                <p>This is a rich and moist chocolate cake. It only takes a few minutes to prepare the batter. Frost
-                    with your favorite chocolate frosting.
+            <div><img id="myimage">
+                <p>
                     Donec risus dui, scelerisque sit amet accumsan auctor, porta vel magna. Donec tempus dictum magna.
                     Maecenas sed mollis sapien. In volutpat urna felis, et eleifend nunc lacinia ut.
 
@@ -131,49 +130,9 @@
 
             <div id="ingredients">
                 <h3 style="margin-left: 20px;">Ingredients</h3>
-                <table class="table table-bordered">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Ingredients</th>
-                            <th scope="col">measure</th>
+                <!-- <table class="table table-bordered" id="createDisplayTable">
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>All purpose Flour</td>
-                            <td>1 cup</td>
-
-
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>vanila essence</td>
-                            <td>1 tbsp</td>
-
-                        </tr>
-                        <tr>
-                            <th scope=" row">4</th>
-                            <td>eggs</td>
-                            <td>3</td>
-
-                        </tr>
-                        <tr>
-                            <th scope=" row">5</th>
-                            <td>butter, melted</td>
-                            <td>¼ cup</td>
-
-                        </tr>
-                        <tr>
-                            <th scope=" row">6</th>
-                            <td>white sugar </td>
-                            <td>3 tbsp</td>
-
-                        </tr>
-                    </tbody>
-                </table>
+                </table> -->
             </div>
         </div>
 
