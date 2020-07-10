@@ -35,13 +35,13 @@ div img{
     margin-bottom: 20px;
 }
 
-.img-fluid{  
+.page-image{  
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     height: 500px;
-    max-width: 90%;
+    width:70%;
    
 }
 
@@ -83,4 +83,9 @@ div img{
 
 .table-bordered{
     border-color:black;
+}
+
+.table1 { width: 70%; }
+.table1, th, td { border: solid 1px black;
+    border-collapse: collapse; padding: 2px 3px; text-align: center;
 }
